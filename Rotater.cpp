@@ -36,6 +36,7 @@ void URotater::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 		FRotator CurrentRotation = GetOwner()->GetActorRotation();
 		FRotator NewRotation = FMath::RInterpTo(CurrentRotation, TargetRotation, DeltaTime, speed);
 		GetOwner()->SetActorRotation(NewRotation);
+		/*this is called only once*/
 	}
 
 
