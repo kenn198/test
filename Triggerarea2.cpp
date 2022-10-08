@@ -30,7 +30,7 @@ void UTriggerarea2::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 		{
 			/*Component->SetSimulatePhysics(false);*/
 			Rotate->SetShouldRotate(true);
-			Actor->SetActorEnableCollision(false);
+			Actor->SetActorEnableCollision(false); /*disabled the key from being picked up*/
 		}
 		//Actor->AttachToComponent(this, FAttachmentTransformRules::KeepWorldTransform);
 	}
